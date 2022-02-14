@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.icon {
+    color: black;
+}
+
+#navbar {
+    color: black;
+    cursor: pointer;
+    height: 9vh;
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.39);
+
+
+}
+
+.welcomeTxt {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+.back a {
+    position: absolute;
+    padding: 10px;
+    color: black;
+    /* text-decoration: none; */
+    /* font-size: 30px; */
+}
+
+.textBig {
+    color: navy;
+    font-weight: bold;
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+
+.textSmall {
+    /* font-weight: bold; */
+    opacity: 0.7;
+    font-size: 1rem;
+    padding-bottom: 10px;
+}
+
+
+.welcomeTxt h1 {
+    display: flex;
+    height: 3vh;
+    justify-content: center;
+    padding: 10px;
+}
+
+.form {
+
+    background-size: contain;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.formElem {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.formText {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    float: left;
+    position: relative;
+
+}
+
+.formContent {
+    float: right;
+    width: 40%;
+    padding-left: 8%;
+}
+
+.inputElem {
+    color: black;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.fileAttach::-webkit-file-upload-button {
+    visibility: hidden;
+
+}
+
+.btn {
+    color: white;
+    background: navy;
+    border: 2px solid white;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 6%;
+    margin-bottom: 2%;
+    display: flex;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transition: all 0.5s;
+    color: #333;
+    background-color: white
+}
+
+
+.formElem i {
+    position: absolute;
+    margin-bottom: 10px;
+    padding: 10px;
+    min-width: 40px;
+}
+
+
+
+.footer {
+    height: 20vh;
+    border-top: 1px solid rgba(255, 255, 255, 0.479);
+    background: rgb(36, 35, 35);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+
+
+textarea {
+    border: 1px solid black;
+    resize: none;
+}
+
+
+.low-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 80%;
+}
+
+.lowerfirstHalf {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+
+}
+
+.lowersecondHalf {
+    display: flex;
+
+    justify-content: center;
+    text-align: right;
+    display: flex;
+    margin: auto;
+
+}
+
+.lowersecondHalf li {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.lowersecondHalf li a {
+
+    text-decoration: none;
+    color: white;
+    /* margin: 10px 20px; */
+    text-align: center;
+    margin-right: 30px;
+    font-size: 1.3rem;
+}
+
+.lowersecondHalf li a:hover {
+
+    color: aqua;
+    transition: all 0.5s ease;
+}
+
+.lowerfirstHalf p {
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+
+@media only screen and (max-width: 594px) {
+
+    #navbar {
+        height: 7vh;
+    }
+
+    .form {
+        height: 120%;
+        flex-direction: column;
+
+    }
+
+    .textBig {
+        padding-top: 20px;
+        font-weight: bold;
+        font-size: 1.6rem;
+        padding-bottom: 10px;
+    }
+
+    .textSmall {
+        /* font-weight: bold; */
+        opacity: 0.7;
+        font-size: 0.8rem;
+        padding-bottom: 10px;
+    }
+
+    .formContent {
+        padding-left: 0%;
+        width: 90%;
+    }
+
+    .lowersecondHalf li a {
+
+        text-decoration: none;
+        color: white;
+        /* margin: 10px 20px; */
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .btn {
+        margin-left: 5%;
+    }
+
+    .lowerfirstHalf p{
+        margin-top: -3px;
+        font-size: 0.8rem;
+    }
+
+}
