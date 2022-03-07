@@ -94,7 +94,7 @@ html {
 
 
 .firstSection {
-    height: 100vh;
+    height: 70vh;
 }
 
 .main-box {
@@ -141,23 +141,34 @@ html {
 
 .btn {
     padding: 8px 20px;
-    margin: 7px 10%;
-    width: 70%;
+    margin: 7px .5%;
+    width: 20%;
     text-align: center;
     justify-content: center;
-    border: 2px solid white;
+    border: 0px solid;
     border-radius: 8px;
     /* font-size: 18px; */
     text-align: center;
-    background: none;
+    background: rgb(199, 0, 0);
     color: white;
     cursor: pointer;
 }
+#blue{
+    background: #3b5998;
+}
+#blue:hover{
+    background: none;
+    color: white;
 
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+}
 .btn:hover {
 
-    background: white;
-    color: rgb(36, 35, 35);
+    background: none;
+    color: white;
+
     transition: all 0.3s ease;
     cursor: pointer;
 }
@@ -175,7 +186,7 @@ html {
 
 .services {
     padding: 20px;
-    height: 50vh;
+    height: 60%;
 
     background: whitesmoke;
     background-size: contain;
@@ -194,7 +205,7 @@ html {
 }
 
 .btn-service {
-    background-color: rgb(0, 123, 255);
+    background-color: rgba(0, 0, 128, 0.753);
     color: white;
     margin: 10px;
     padding: 8px;
@@ -216,7 +227,7 @@ html {
 
 
 .btn-service:hover {
-    background-color: rgb(1, 102, 209);
+    background-color:blueviolet;
     transition: all .3s ease;
 
 }
@@ -361,7 +372,9 @@ html {
 
 @media only screen and (max-width: 826px) {
 
-
+    .btn{
+        width: 60%;
+    }
     .service {
         display: flex;
         flex-direction: column;

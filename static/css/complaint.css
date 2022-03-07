@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 
 * {
     margin: 0px;
@@ -7,9 +10,23 @@
 }
 
 
-.icon {
-    color: black;
+.alert {
+    padding: 10px;
 }
+
+.alert-success {
+
+    background-color: rgb(168, 252, 168);
+}
+
+.icon {
+    color: rgba(0, 0, 128, 0.753);
+    
+}
+
+
+
+
 
 #navbar {
     color: black;
@@ -22,7 +39,7 @@
 }
 
 .welcomeTxt {
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Staatliches', cursive;
 }
 
 
@@ -34,11 +51,19 @@
     /* font-size: 30px; */
 }
 
+.back a:hover{
+    animation:spin .3s linear ;
+}
+
+@keyframes spin { 100% { transform:rotate(360deg); } }
+
 .textBig {
-    color: navy;
+    color: rgba(0, 0, 128, 0.753);
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2.8rem;
     padding-bottom: 10px;
+    
+    font-family: 'Poppins', sans-serif;
 }
 
 .textSmall {
@@ -54,9 +79,12 @@
     height: 3vh;
     justify-content: center;
     padding: 10px;
+    
 }
 
 .form {
+
+    background-color: white;
 
     background-size: contain;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -64,7 +92,7 @@
     height: 90vh;
     justify-content: center;
     align-items: center;
-
+    
 }
 
 .formElem {
@@ -79,7 +107,7 @@
     width: 40%;
     float: left;
     position: relative;
-
+    
 }
 
 .formContent {
@@ -93,6 +121,9 @@
     text-align: center;
     padding: 10px;
     border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px black;
+
 }
 
 .fileAttach::-webkit-file-upload-button {
@@ -101,9 +132,9 @@
 }
 
 .btn {
-    color: white;
-    background: navy;
-    border: 2px solid white;
+    color: whitesmoke;
+    background: rgba(0, 0, 128, 0.753);
+    border: 1px solid black;
     padding: 10px;
     outline: none;
     border-radius: 5px;
@@ -115,8 +146,8 @@
 
 .btn:hover {
     transition: all 0.5s;
-    color: #333;
-    background-color: white
+    color: white;
+    background-color: blueviolet;
 }
 
 
@@ -142,6 +173,8 @@
 textarea {
     border: 1px solid black;
     resize: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px black;
 }
 
 
@@ -215,14 +248,14 @@ textarea {
     .textBig {
         padding-top: 20px;
         font-weight: bold;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         padding-bottom: 10px;
     }
 
     .textSmall {
         /* font-weight: bold; */
         opacity: 0.7;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         padding-bottom: 10px;
     }
 

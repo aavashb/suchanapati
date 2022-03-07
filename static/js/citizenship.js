@@ -26,7 +26,7 @@ for (let index = 0; index < queries.length; index++) {
 
 
 
-document.querySelector(".btn").addEventListener('click', () => {
+document.querySelector("#submit").addEventListener('click', () => {
 
     var notify = document.querySelector(".notify");
     var allChecked = false;
@@ -53,7 +53,6 @@ document.querySelector(".btn").addEventListener('click', () => {
             notify.innerHTML = ""
 
         }, 5000);
-
 
 
 
